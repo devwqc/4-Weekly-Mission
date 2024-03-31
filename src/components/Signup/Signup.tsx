@@ -1,3 +1,5 @@
+import { ChangeEvent, FormEvent } from 'react';
+import styles from './Signup.module.css';
 import { Input } from '@/src/components/Input';
 import { VALIDATION_CODE } from '@/src/constants/validation';
 import useInput from '@/src/hooks/useInput';
@@ -6,7 +8,6 @@ import {
   getValidatePasswordCode,
   getValidatePasswordConfirmCode,
 } from '@/src/utils/validation';
-import { ChangeEvent, FormEvent } from 'react';
 
 export default function Signup() {
   const email = useInput({ validator: getValidateEmailCode });
@@ -64,8 +65,8 @@ export default function Signup() {
   };
 
   return (
-    <form onSubmit={handleSubmit}>
-      <div>
+    <form className={styles.Signup} onSubmit={handleSubmit}>
+      <div className={styles.InputContainer}>
         <label htmlFor="email">이메일</label>
         <Input
           id="email"
@@ -77,7 +78,7 @@ export default function Signup() {
           message={email.message}
         />
       </div>
-      <div>
+      <div className={styles.InputContainer}>
         <label htmlFor="password">비밀번호</label>
         <Input
           id="password"
@@ -91,7 +92,7 @@ export default function Signup() {
           hasVisibleToggler={true}
         />
       </div>
-      <div>
+      <div className={styles.InputContainer}>
         <label htmlFor="passwordConfirm">비밀번호 확인</label>
         <Input
           id="passwordConfirm"
