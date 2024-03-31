@@ -73,6 +73,7 @@ export default function Signup() {
           id="email"
           name="email"
           value={email.value}
+          placeholder="이메일을 입력해 주세요."
           onChange={email.handleInputChange}
           onBlur={email.handleInputChange}
           isError={email.isError}
@@ -85,6 +86,7 @@ export default function Signup() {
           id="password"
           name="password"
           type="password"
+          placeholder="비밀번호를 입력해 주세요."
           value={password.value}
           onChange={handlePasswordChange}
           onBlur={handlePasswordChange}
@@ -99,6 +101,7 @@ export default function Signup() {
           id="passwordConfirm"
           name="passwordConfirm"
           type="password"
+          placeholder="비밀번호를 입력해 주세요."
           value={passwordConfirm.value}
           onChange={handlePasswordConfirmChange}
           onBlur={handlePasswordConfirmChange}
