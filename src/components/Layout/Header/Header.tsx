@@ -77,6 +77,7 @@ function ButtonUser({ user }: ButtonUserProps) {
           className={styles['button-user__img']}
           src={user.image_source}
           alt={user.name}
+          fill={true}
         />
       </div>
       <div className={styles['button-user__email']}>{user.email}</div>

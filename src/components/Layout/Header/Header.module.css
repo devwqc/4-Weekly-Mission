@@ -23,6 +23,7 @@
 }
 
 .button-user__img__container {
+  position: relative;
   width: 28px;
   height: 28px;
   border-radius: 50%;
