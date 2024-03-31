@@ -8,6 +8,7 @@ import {
   getValidatePasswordCode,
   getValidatePasswordConfirmCode,
 } from '@/src/utils/validation';
+import { Button } from '../Button';
 
 export default function Signup() {
   const email = useInput({ validator: getValidateEmailCode });
@@ -106,7 +107,7 @@ export default function Signup() {
           hasVisibleToggler={true}
         />
       </div>
-      <button>회원가입</button>
+      <Button>회원가입</Button>
     </form>
   );
 }
