@@ -5,15 +5,7 @@ import { IconKebabMenu, IconStar } from '@/src/components/Icon';
 import { MouseEvent, SyntheticEvent } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
-
-export interface CardItem {
-  id: number;
-  title: string;
-  description: string;
-  url: string;
-  createdAt: string;
-  imageSource: string;
-}
+import { CardItem } from '@/src/types/card';
 
 interface CardProps {
   item: CardItem;

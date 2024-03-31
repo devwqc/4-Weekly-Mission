@@ -1,4 +1,5 @@
-import Card, { CardItem } from './Card';
+import { CardItem } from '@/src/types/card';
+import Card from './Card';
 import styles from './CardList.module.css';
 
 interface CardListProps {
