@@ -54,6 +54,8 @@ function InputBongchan({
             <Image
               src={isVisible ? eyeOnImg : eyeOffImg}
               alt={isVisible ? '눈 뜸' : '눈 감음'}
+              width={16}
+              height={16}
             />
           </button>
         )}
