@@ -50,6 +50,7 @@ function Card({ item }: CardProps) {
             src={imageSource || ''}
             alt={title}
             onError={handleImgError}
+            fill={true}
           />
           <button
             type="button"
