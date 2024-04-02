@@ -1,8 +1,8 @@
 import Image from 'next/image';
 import { InputHTMLAttributes, useState } from 'react';
 import styles from './input.module.css';
-import eyeOnImg from '@/public/images/eye-on.svg';
-import eyeOffImg from '@/public/images/eye-off.svg';
+import eyeOnImg from '@/public/svgs/eye-on.svg';
+import eyeOffImg from '@/public/svgs/eye-off.svg';
 import hasInitialInputType from '@/src/utils/hasInitialInputType';
 
 type InputProps = {
