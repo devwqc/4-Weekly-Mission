@@ -14,6 +14,10 @@ interface CardProps {
 function Card({ item }: CardProps) {
   const { title, description, url, createdAt, imageSource } = item;
 
+  const parsedImageSource = imageSource?.startsWith('//')
+    ? `https:${imageSource}`
+    : imageSource;
+
   const handleImgError = (e: SyntheticEvent<HTMLImageElement>) => {
     e.currentTarget.src = cardImg.src;
   };
@@ -47,9 +51,9 @@ function Card({ item }: CardProps) {
         <div className={styles.card__image__container}>
           <Image
             className={styles.card__image}
-            src={imageSource || ''}
+            src={parsedImageSource || cardImg.src}
             alt={title}
-            onError={handleImgError}
+            // onError={handleImgError}
             fill={true}
           />
           <button
