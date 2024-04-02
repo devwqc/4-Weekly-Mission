@@ -1,5 +1,5 @@
 import { SearchBox, SearchBoxLink } from '@/src/components/SearchBox';
-import * as S from './Folder.styled';
+import * as S from '../../styles/Folder.styled';
 import { getFolders, getLinks } from '@/src/apis/api';
 import { useLoginUser } from '@/src/contexts/LoginContext';
 import { Link } from '@/src/types/card';
