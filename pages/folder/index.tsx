@@ -4,7 +4,7 @@ import { getFolders, getLinks } from '@/src/apis/api';
 import { useLoginUser } from '@/src/contexts/LoginContext';
 import { Link } from '@/src/types/card';
 import { UserFolder } from '@/src/types/folder';
-import { useEffect, useState } from 'react';
+import { ReactElement, useEffect, useState } from 'react';
 import { TabList } from '@/src/components/TabList';
 import {
   IconAdd,
@@ -13,8 +13,9 @@ import {
   IconShare,
 } from '@/src/components/Icon';
 import { CardList } from '@/src/components/CardList';
+import { MainLayout } from '@/src/components/Layout';
 
-function FolderPage() {
+export default function FolderPage() {
   const loginUser = useLoginUser();
   const [activeFolder, setActiveFolder] = useState<UserFolder | null>(null);
   const [folders, setFolders] = useState<UserFolder[]>([]);
@@ -109,4 +110,6 @@ function FolderPage() {
   );
 }
 
-export default FolderPage;
+FolderPage.getLayout = function getLayout(page: ReactElement) {
+  return <MainLayout>{page}</MainLayout>;
+};
