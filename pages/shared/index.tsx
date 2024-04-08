@@ -1,10 +1,11 @@
 import styles from './shared.module.css';
 import { CardItem } from '@/src/types/card';
-import { useEffect, useState } from 'react';
+import { ReactElement, useEffect, useState } from 'react';
 import { getFolder } from '@/src/apis/api';
 import { SearchBox } from '@/src/components/SearchBox';
 import { CardList } from '@/src/components/CardList';
 import Image from 'next/image';
+import { MainLayout } from '@/src/components/Layout';
 
 interface FolderInfo {
   id: number;
@@ -17,7 +18,7 @@ interface Owner {
   profileImageSource: string;
 }
 
-function SharedPage() {
+export default function SharedPage() {
   const [folderInfo, setFolderInfo] = useState<FolderInfo | null>(null);
   const [owner, setOwner] = useState<Owner | null>(null);
   const [items, setItems] = useState<CardItem[]>([]);
@@ -89,4 +90,6 @@ function SharedContent({ items = [] }: SharedContentProps) {
   );
 }
 
-export default SharedPage;
+SharedPage.getLayout = function getLayout(page: ReactElement) {
+  return <MainLayout>{page}</MainLayout>;
+};
