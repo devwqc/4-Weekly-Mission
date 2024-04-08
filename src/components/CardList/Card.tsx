@@ -19,6 +19,7 @@ function Card({ item }: CardProps) {
     : imageSource;
 
   const handleImgError = (e: SyntheticEvent<HTMLImageElement>) => {
+    e.currentTarget.srcset = cardImg.src;
     e.currentTarget.src = cardImg.src;
   };
 
@@ -53,7 +54,7 @@ function Card({ item }: CardProps) {
             className={styles.card__image}
             src={parsedImageSource || cardImg.src}
             alt={title}
-            // onError={handleImgError}
+            onError={handleImgError}
             fill={true}
           />
           <button
