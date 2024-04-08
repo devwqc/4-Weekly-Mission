@@ -1,8 +1,8 @@
+import { ReactElement } from 'react';
 import Link from 'next/link';
-import styles from '@/styles/Home.module.css';
+import styles from '@/styles/pages/Home.module.css';
 import { Signup } from '@/src/components/Signup';
 import { Button } from '@/src/components/Button';
-import { ReactElement } from 'react';
 import { MainLayout } from '@/src/components/Layout';
 
 export default function Home() {
