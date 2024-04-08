@@ -1,10 +1,10 @@
+import { ReactElement, useEffect, useState } from 'react';
+import * as S from '@/styles/pages/Folder.styled';
 import { SearchBox, SearchBoxLink } from '@/src/components/SearchBox';
-import * as S from '../../styles/Folder.styled';
 import { getFolders, getLinks } from '@/src/apis/api';
 import { useLoginUser } from '@/src/contexts/LoginContext';
 import { Link } from '@/src/types/card';
 import { UserFolder } from '@/src/types/folder';
-import { ReactElement, useEffect, useState } from 'react';
 import { TabList } from '@/src/components/TabList';
 import {
   IconAdd,
