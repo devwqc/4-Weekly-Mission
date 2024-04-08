@@ -1,4 +1,4 @@
-import { CardItem } from '@/src/types/card';
+import { CardItem } from '@/src/types/card.type';
 import Card from './Card';
 import styles from './CardList.module.css';
 

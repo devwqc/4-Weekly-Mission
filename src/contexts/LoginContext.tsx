@@ -5,7 +5,7 @@ import {
   useEffect,
   useState,
 } from 'react';
-import { User } from '@/src/types/user';
+import { User } from '@/src/types/user.type';
 
 interface LoginContextValue {
   loginUser: User | null;

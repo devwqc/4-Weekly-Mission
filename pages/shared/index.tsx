@@ -1,5 +1,5 @@
 import styles from './shared.module.css';
-import { CardItem } from '@/src/types/card';
+import { CardItem } from '@/src/types/card.type';
 import { ReactElement, useEffect, useState } from 'react';
 import { getFolder } from '@/src/apis/api';
 import { SearchBox } from '@/src/components/SearchBox';

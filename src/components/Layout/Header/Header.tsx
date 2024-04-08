@@ -2,7 +2,7 @@ import styles from './Header.module.css';
 import { Button } from '@/src/components/Button';
 import { IconLogo } from '@/src/components/Icon';
 import { useLoginUser, useSetLoginUser } from '@/src/contexts/LoginContext';
-import { User } from '@/src/types/user';
+import { User } from '@/src/types/user.type';
 import Link from 'next/link';
 import Image from 'next/image';
 import { getUser } from '@/src/apis/api';

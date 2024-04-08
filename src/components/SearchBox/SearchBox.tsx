@@ -1,6 +1,6 @@
 import styles from './SearchBox.module.css';
 import { IconSearch } from '../Icon';
-import { InputProps } from '@/src/types/props';
+import { InputProps } from '@/src/types/props.type';
 
 interface SearchBoxProps extends InputProps {}
 

@@ -3,8 +3,8 @@ import * as S from '@/styles/pages/Folder.styled';
 import { SearchBox, SearchBoxLink } from '@/src/components/SearchBox';
 import { getFolders, getLinks } from '@/src/apis/api';
 import { useLoginUser } from '@/src/contexts/LoginContext';
-import { Link } from '@/src/types/card';
-import { UserFolder } from '@/src/types/folder';
+import { Link } from '@/src/types/card.type';
+import { UserFolder } from '@/src/types/folder.type';
 import { TabList } from '@/src/components/TabList';
 import {
   IconAdd,
