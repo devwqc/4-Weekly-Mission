@@ -1,4 +1,4 @@
-import styles from './shared.module.css';
+import styles from './styles/shared.module.css';
 import { CardItem } from '@/src/types/card.type';
 import { ReactElement, useEffect, useState } from 'react';
 import { getFolder } from '@/src/apis/api';
