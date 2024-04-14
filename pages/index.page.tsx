@@ -1,7 +1,9 @@
+import { ReactElement } from 'react';
 import Link from 'next/link';
-import styles from '@/styles/Home.module.css';
+import styles from '@/styles/pages/Home.module.css';
 import { Signup } from '@/src/components/Signup';
 import { Button } from '@/src/components/Button';
+import { MainLayout } from '@/src/components/Layout';
 
 export default function Home() {
   return (
@@ -23,3 +25,7 @@ export default function Home() {
     </div>
   );
 }
+
+Home.getLayout = function getLayout(page: ReactElement) {
+  return <MainLayout>{page}</MainLayout>;
+};

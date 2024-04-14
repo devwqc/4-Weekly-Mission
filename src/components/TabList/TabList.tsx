@@ -1,4 +1,4 @@
-import { UserFolder } from '@/src/types/folder';
+import { UserFolder } from '@/src/types/folder.type';
 import * as S from './styles/TabList.styled';
 import Tab from './Tab';
 

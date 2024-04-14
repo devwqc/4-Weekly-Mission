@@ -1,4 +1,4 @@
-import { Link, LinkBase } from '../types/card';
+import { Link, LinkBase } from '../types/card.type';
 
 const BASE_URL = 'https://bootcamp-api.codeit.kr/api';
 

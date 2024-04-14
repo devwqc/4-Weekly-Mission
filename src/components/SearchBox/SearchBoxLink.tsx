@@ -1,7 +1,7 @@
 import * as S from './SearchBoxLink.styled';
 import { IconLink } from '../Icon';
 import { Button } from '../Button';
-import { InputProps } from '@/src/types/props';
+import { InputProps } from '@/src/types/props.type';
 
 interface SearchBoxLinkProps extends InputProps {}
 

@@ -5,7 +5,7 @@ import { IconKebabMenu, IconStar } from '@/src/components/Icon';
 import { MouseEvent, SyntheticEvent } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
-import { CardItem } from '@/src/types/card';
+import { CardItem } from '@/src/types/card.type';
 
 interface CardProps {
   item: CardItem;
@@ -19,6 +19,7 @@ function Card({ item }: CardProps) {
     : imageSource;
 
   const handleImgError = (e: SyntheticEvent<HTMLImageElement>) => {
+    e.currentTarget.srcset = cardImg.src;
     e.currentTarget.src = cardImg.src;
   };
 
@@ -53,7 +54,7 @@ function Card({ item }: CardProps) {
             className={styles.card__image}
             src={parsedImageSource || cardImg.src}
             alt={title}
-            // onError={handleImgError}
+            onError={handleImgError}
             fill={true}
           />
           <button

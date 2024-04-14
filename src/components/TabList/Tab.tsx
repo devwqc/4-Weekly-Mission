@@ -1,6 +1,6 @@
 import { ReactNode } from 'react';
 import * as S from './styles/Tab.styled';
-import { UserFolder } from '@/src/types/folder';
+import { UserFolder } from '@/src/types/folder.type';
 
 interface TabProps {
   children: ReactNode;

@@ -1,0 +1,4 @@
+.background {
+  background-color: var(--color-gray-bg);
+  height: 100vh;
+}
