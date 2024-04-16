@@ -20,6 +20,7 @@ const LoginContext = createContext<LoginContextValue | null>(null);
 // user 검증이 됐다면 자동 로그인과 로그인 상태 유지하기.
 
 // 모든 컴포넌트에서 로그인 상태를 유지하고 싶은 목적으로 생성.
+/** @TODO 프로젝트 파이팅!! */
 export function LoginProvider({ children }: { children: ReactNode }) {
   const [isLogin, setIsLogin] = useState(false);
   const [loginUser, setLoginUser] = useState<User | null>(null);
